@@ -12,7 +12,6 @@ import javafx.scene.text.Font;
 import javafx.animation.Timeline;
 import javafx.animation.KeyFrame;
 import javafx.util.Duration;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Iterator;
 import java.util.Random;
