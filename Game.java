@@ -47,10 +47,6 @@ public class Game extends Application {
     private Image birdImage;
     private Image pipeImage;
     private Font pressStart2P;
-
-    public static void main(String[] args) {
-        launch(args);
-    }
     
     public void start(Stage stage) {
         newBirds(new NeuralNetwork(networkShape), numBirds); 
