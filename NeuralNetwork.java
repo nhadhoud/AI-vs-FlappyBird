@@ -28,7 +28,8 @@ public class NeuralNetwork {
             layer.mutate(mutationProbability, mutationAmount);
         }
     }
-    
+
+    @Override
     public NeuralNetwork clone() {
         NeuralNetwork cloneNetwork = new NeuralNetwork(neuronsPerLayer);
         for (int i = 0; i < layers.length; i++) {
