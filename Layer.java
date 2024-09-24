@@ -46,7 +46,8 @@ public class Layer
             }
         }
     }
-    
+
+    @Override
     public Layer clone() {
         Layer cloneLayer = new Layer(this.inputsPerNeuron, this.numNeurons);
         for (int i = 0; i < this.weights.length; i++) {
