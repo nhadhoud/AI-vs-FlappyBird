@@ -4,3 +4,4 @@ Neural network takes the normalised parameters of the horizontal distance to the
 Neural network has 1 input layer, 1 hidden layer and 1 output layer.
 A bird jump is decided by the neural network giving a larger value for jump than not jump in the output layer.
 No external libraries are used.
+Run from Game. 
