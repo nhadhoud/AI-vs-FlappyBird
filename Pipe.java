@@ -2,15 +2,15 @@ import javafx.scene.image.Image;
 import javafx.scene.canvas.GraphicsContext;
 
 public class Pipe {
-    private float positionX, positionY;
-    private static float width, height;
+    private int positionX, positionY;
+    private static int width, height;
     private boolean passed = false;
     private boolean flipped;
     
     private static float speed;
     private static Image image;
 
-    public Pipe(float positionX, float positionY, boolean flipped) {
+    public Pipe(int positionX, int positionY, boolean flipped) {
         this.positionX = positionX;
         this.positionY = positionY;
         this.flipped = flipped;
@@ -32,27 +32,27 @@ public class Pipe {
         }
     }
 
-    public float getPositionX() {
+    public int getPositionX() {
         return positionX;
     }
 
-    public float getPositionY() {
+    public int getPositionY() {
         return positionY;
     }
     
-    public static float getWidth() {
+    public static int getWidth() {
         return width;
     }
     
-    public static void setWidth(float newWidth) {
+    public static void setWidth(int newWidth) {
         width = newWidth;
     }
     
-    public static float getHeight() {
+    public static int getHeight() {
         return height;
     }
     
-    public static void setHeight(float newHeight) {
+    public static void setHeight(int newHeight) {
         height = newHeight;
     }
 
