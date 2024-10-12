@@ -30,8 +30,8 @@ public class Game extends Application {
     private int generations = 1;
 
     private LinkedList<Pipe> pipes = new LinkedList<>();
-    private final float PIPE_INTERVAL = 700; 
-    private final float PIPE_GAP = 160;
+    private final int PIPE_INTERVAL = 700; 
+    private final int PIPE_GAP = 160;
     
     private Pipe nextTopPipe;
     private Pipe nextBottomPipe;
@@ -181,7 +181,7 @@ public class Game extends Application {
     private void newPipes() {
         Random rand = new Random();
         if (pipes.isEmpty() || pipes.getLast().getPositionX() <  screenWidth - PIPE_INTERVAL) {
-            float positionY = (float) rand.nextDouble(-Pipe.getHeight(), -PIPE_GAP) - FLOOR_POSITION_Y;
+            int positionY = -1 * (rand.nextInt(Pipe.getHeight() - PIPE_GAP) + PIPE_GAP + FLOOR_POSITION_Y);
             pipes.add(new Pipe(screenWidth, positionY, true));
             pipes.add(new Pipe(screenWidth, positionY + PIPE_GAP + Pipe.getHeight(), false));
         };
